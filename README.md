@@ -1,4 +1,5 @@
 misc-utils
 ==========
 
-Misc utils written in various languages
+Misc. utils written in various languages.
+
