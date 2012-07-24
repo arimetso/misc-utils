@@ -3,6 +3,8 @@
 #
 # Convert milliseconds from Unix epoch (Jan 1 1970 00:00:00.000) to a human-readable date.
 # Works for example for Java System.currentTimeMillis() timestamps.
+#
+# Public domain. No warranty whatsoever. No guarantees about fitness for any purpose.
 
 from datetime import datetime, timedelta
 import sys

@@ -1,6 +1,8 @@
 #!/bin/bash
 #
 # Generate simple self-signed SSL certificate using JDK keytool.
+#
+# Public domain. No warranty whatsoever. No guarantees about fitness for any purpose.
 
 keystore_file=keystore.dat
 
