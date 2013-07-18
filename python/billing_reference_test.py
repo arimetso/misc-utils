@@ -9,7 +9,7 @@
 import unittest
 from billing_reference import ReferenceNumber
 
-class BillingReferenceTest(unittest.TestCase):
+class ReferenceNumberTest(unittest.TestCase):
     def test_generator_with_too_short_bill_ids(self):
         self.assertEquals(13, ReferenceNumber(1).get())
         self.assertEquals(291, ReferenceNumber(29).get())
