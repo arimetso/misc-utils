@@ -42,10 +42,11 @@ class ReferenceNumber(object):
         return int(bill_id) * 10 + (10 - checksum) % 10
 
     def _group(self, reference):
-        ref = unicode(reference)
-        first_group_len = len(ref) % 5
-        remaining = ref[first_group_len:]
-        yield ref[:first_group_len+1]
+        remaining = unicode(reference)
+        first_group_len = len(remaining) % 5
+        if first_group_len > 0:
+            yield remaining[:first_group_len]
+            remaining = remaining[first_group_len:]
         while len(remaining) > 0:
             group = remaining[:5]
             remaining = remaining[5:]
