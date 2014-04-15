@@ -39,9 +39,12 @@ if len(folder) == 0 or len(key) == 0:
 
 # Password must not be empty. If it wasn't in the command line, ask it
 if "set" == op and (password == None or len(password) == 0):
-    password = getpass("Enter password:")
+    password = getpass("Enter password: ")
     if len(password) == 0:
         sys.exit("Cannot set an empty password.")
+    passwd_again = getpass("Retype password: ")
+    if password != passwd_again:
+        sys.exit("Passwords do not match.")
 
 # Just a blank application to keep QEventLoop from complaining
 application = QtGui.QApplication([])
