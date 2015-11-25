@@ -6,6 +6,10 @@
 # Note that the error handling is very rudimentary.
 # There are cases which aren't handled.
 #
+# Note too that this works with KDE 4.x only. KDE Plasma 5 apparently
+# doesn't provide Python bindings. As of November 2015 anyway.
+# See kwallet5pass.py for a DBus-based alternative for KDE 5.
+#
 # Public domain. No warranty whatsoever and
 # no guarantees about fitness for any purpose.
 
